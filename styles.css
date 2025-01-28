@@ -1,0 +1,41 @@
+body {
+    background-color: #000;/* cor de fundo do site (preta)*/
+}
+.sidebar{
+    position: fixed;/* Manterá essa parte fixa na página, nao importa o que aconteça */
+    top: 0;/* Top, left, right, bottom são styles que acompanharão o postion que não seja static (fixed, absolute) */
+    left:0;
+    bottom: 0;
+    padding: 12px;/* um valor foi colocado no padding,ou seja, em todas as posições ele possui 12px de padding */
+    width: 300px;/*largura */
+}
+.sidebar__navigation {
+    background-color: #121212;/* Cor de fundo da parte mais lateral do site (area de navegação) */
+    border-radius: 8px;/* é o que faz o quadradinho ficar arredondado*/
+    padding: 16px 0 0 16px;/*Espaçamento do objeto em relação a sua borda (gira no sentido horário (cima, direita, baixo, esquerda) */
+}
+
+.sidebar__navigation .logo {
+    background-color:#121212;
+    display:flex;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+.sidebar__navigation .logo img { /*Pegará a img que está dentro da tag logo que esta dentro da tag sidebar__navigation*/
+    width: 80px;
+
+}
+.sidebar nav ul {
+    margin-top: 20px;/* distanciar o nav do topo */
+    padding: 0 20px 10px 20px;
+}
+.sidebar ul li{  /* modificar a lista dentro do sidebar*/
+    padding: 10px 0; /* quando usa-se dois numeros no padding o primeiro numero relaciona-se com a parte (top e bottom) e o segundo com a parte (left e right)*/
+}
+.sidebar nav ul li a {
+    color: #b3b3b3;
+    text-decoration: none; /* faz desaparecer a bolinha do ul quando uma lista é criada, todavia ja havíamos retirado essa propriedade com o reset.css */
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+}
