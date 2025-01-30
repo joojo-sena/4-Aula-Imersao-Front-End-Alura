@@ -2,8 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Spotify Imersao</title>
     <link rel="stylesheet" href="reset.css">  <!-- importante tomar cuidado na hora de linkar os css, uma vez que a ordem importa e quem vem por ultimo subscreve os primeiros links -->
     <link rel="stylesheet" href="styles.css">
@@ -20,7 +19,6 @@
                     <img src="./assets/icons/logo-spotify.png" alt="logo do Spotify">
                 </a>
             </div>
-                <div>
                     <ul>
                         <li>
                             <a href="">
@@ -35,9 +33,36 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-            </div>
         </nav>
+
+        <div class="library"> <!-- biblioteca -->
+            <div class="library__content"> <!-- conteúdo da biblioteca --> <!-- pesquisar sobre a metodologia bem para css (otimização e padronização da estrutura de código) -->
+                <button class="library__button"><!-- butão da biblioteca-->
+                    <span class="fa fas fa-book"></span><!-- importando imagem do button(biblioteca), ícones já linkados na primeira aula -->
+                    <span>Sua biblioteca</span>
+                </button>
+                <span class="fa fa-plus"></span><!-- importando imagem do +, ícones já linkados na primeira aula -->
+            </div>
+
+            <section class="section-playlist"> <!-- utilizando outras tags html tais como section, analogia = (div é uma casa, e a section os comodos) -->
+                <div class="section-playlist__content">
+                    <span class="text title">Crie sua primeira Playlist</span><!-- duas classes em uma, ("text e title") vai ser usado para otimizar o tempo e economizar quando repetimos caracteristicas de estilos em tags parecidas -->
+                    <span class="text subtitle">É fácil, vamos te ajudar!</span><!-- tem a classe text e subtitle (incorporará todos os estilos da text e usara os estilo da subtitle) -->
+                    <button class="section-playlist__button"> <!-- butao de criar playlist-->
+                        <span>Criar Playlist</span>
+                    </button>
+                </div>
+            </section>
+            <div class="cookies"><!-- o nome ja diz, é a parte dos Cookies do site -->
+                <a href="">Cookies</a> <!--Em tese levaria para outro site, todavia como só estamos construindo a parte inicial do spotify não levaremos a outro link-->
+            </div>
+            <div class="languages"><!-- divisao para troca de idiomas do site-->
+                <button class="languages__button"><!-- butão que sera responsavel por mostrar as opções de idiomas disponiveis-->
+                    <span class="fa fa-globe"></span><!-- ícone do globe que representa idiomas internacionais-->
+                    <span>Português do Brasil</span>
+                </button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
