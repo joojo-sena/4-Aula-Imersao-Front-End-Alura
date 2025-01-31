@@ -1,5 +1,7 @@
+/*Estilizando a parte da esquerda do site com o footer*/
 body {
     background-color: #000;/* cor de fundo do site (preta)*/
+    font-family: var(--font-dm-sans);
 }
 .sidebar{
     position: fixed;/* Manterá essa parte fixa na página, nao importa o que aconteça */
@@ -37,7 +39,6 @@ body {
     text-decoration: none; /* faz desaparecer a bolinha do ul quando uma lista é criada, todavia ja havíamos retirado essa propriedade com o reset.css */
     font-weight: 600;
     font-size: 14px;
-    font-family: "DM Sans", sans-serif;
 }
 .library{ /* estiliando a divisao biblioteca suas borda, cor de fundo etc*/
     background-color: #121212;
@@ -63,7 +64,6 @@ body {
     border:0px; /* tira o contorno da borda do botão*/
     font-size: 14px;/*equivale a 1 rem, que foi um spoiler para 3 aula de imersao, algo relacionado a responsividade.*/
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-align: center; /*centralizar o texto*/
     text-decoration: none;
     text-transform:none;/*caixa alta, lowercase, capitalize, formas de texto, nesse caso, nenhuma.*/
@@ -99,7 +99,6 @@ body {
 .section-playlist__content .text{/* estilizando o texto da playlist, que sera usado pelo titulo e subtitulo*/
     padding-bottom: 14px;
     color: #fff;
-    font-family: "DM Sans", sans-serif;
 }
 .section-playlist__content .title{/* estilizando o titulo da playlist*/
     font-weight: 700;
@@ -116,7 +115,6 @@ body {
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-decoration: none;
     text-transform: none;
     padding: 10px;
@@ -147,4 +145,42 @@ body {
     margin:8px;
     padding: 8px;
     border-radius: 20px;
+}
+.disclaimer-premium {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.disclaimer-premium .text {
+   flex-shrink: 0;
+}
+.disclaimer-premium .disclaimer-premium__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    flex-shrink: 0;
 }
