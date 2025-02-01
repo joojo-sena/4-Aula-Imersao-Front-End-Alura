@@ -1,4 +1,4 @@
-# 🎵 Spotify Clone – 4ª Aula da Imersão Front-End Alura  
+# 🎵 Spotify Clone – 4ª Aula da Imersão Front-End Alura   
 
 📌 Este projeto aprimora o clone da interface do **Spotify**, trazendo integração com uma API simulada via **JSON Server**. Agora, os dados são carregados dinamicamente, tornando a experiência mais realista e interativa. Além disso, utilizamos **Fetch API** para consumir e exibir informações, enquanto **JavaScript (ES6+)** aprimora a manipulação do DOM.  
 
